@@ -19,16 +19,21 @@
     </div>
     <!-- <button>Click to get info</button> -->
     <!-- <h2 id="songTitle">Song Title</h2> -->
-    <ul class="songInfoList">
-        <li><span>Song Title: </span><span id="songTitle"></span></li>
-        <li><span>Artist: </span><span id="artist"></span></li>
-        <li><span>Album: </span><span id="album"></span></li>
-        <li><span>Year: </span><span id="year"></span></li>
-    </ul>
-    <section>
-        <img src="" alt="album image" class="border" id="albumImage">
-        <p class="caption" id="albumCaption">Album</p>
-    </section>
+    <div class="flex-container">
+        <div class="flex-left">
+            <ul class="songInfoList">
+                <li><span>Song Title :  </span><span id="songTitle"></span></li>
+                <li><span>Artist :  </span><span id="artist"></span></li>
+                <li><span>Album :  </span><span id="album"></span></li>
+                <li><span>Year :  </span><span id="year"></span></li>
+            </ul>
+        </div>
+        <div class="flex-right">
+            <img src="images/Ben-Folds-close-up-1275793826.jpeg" alt="Ben Folds album image" class="border" id="albumImage">
+            <p class="caption" id="albumCaption"></p>
+        </div>
+    </div>
     <script src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/22d2f500e4.js" crossorigin="anonymous"></script>
 </body>
 </html>
