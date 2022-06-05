@@ -10,6 +10,7 @@ a {
     box-shadow: 0 0 10px #000000;
     margin: 1rem;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 input {
