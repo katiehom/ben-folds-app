@@ -1,0 +1,17 @@
+body {
+    background-color: rgb(0, 52, 168);
+    color: white;
+}
+
+a {
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: .5rem;
+    box-shadow: 0 0 10px #000000;
+    margin: 1rem;
+    text-transform: uppercase;
+}
+
+input {
+    margin-bottom: 2rem;
+}
