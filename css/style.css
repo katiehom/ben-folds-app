@@ -89,4 +89,10 @@ ul li {
     .flex-right{
         width: 100%;
     }
+    ul {
+        margin-top: 0;
+    }
+    #albumImage {
+        margin-top: 1.5rem;
+    }
 }
