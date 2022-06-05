@@ -3,18 +3,29 @@ body {
     color: white;
 }
 
+h1 {
+    text-align: center;
+}
+
 a {
     border: 2px solid white;
     border-radius: 5px;
     padding: .5rem;
     box-shadow: 0 0 10px #000000;
-    margin: 1rem;
+    margin: 1rem auto;
     text-transform: uppercase;
     cursor: pointer;
+    display: block;
+    width: 100px;
+    text-align: center;
 }
 
 input {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin: 2rem auto;
     display: block;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
 }
