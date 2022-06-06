@@ -57,8 +57,9 @@ img {
 }
 
 .benPiano {
-    width: 25vw;
-    min-width: 300px;
+    width: 30vw;
+    min-width: 325px;
+    max-width: 600px;
 }
 
 #albumImage {
