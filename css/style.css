@@ -44,6 +44,10 @@ a {
     width: 100px;
 }
 
+a:hover {
+    background-color: rgb(78, 78, 250);
+}
+
 input {
     margin: 2rem auto;
     display: block;
