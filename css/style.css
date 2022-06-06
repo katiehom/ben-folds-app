@@ -90,6 +90,7 @@ ul li {
     
     .flex-right{
         width: 100%;
+        align-self: center;
     }
     ul {
         margin-top: 0;
