@@ -82,6 +82,23 @@ ul {
 ul li {
     font-size: 1.3rem;
 }
+@media screen and (min-width: 901px) {
+    html {
+        font-size: 140%;
+    }
+    a {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    html {
+        font-size: 120%;
+    }
+    a {
+        width: 120px;
+    }
+}
 
 @media screen and (max-width: 900px) {
     .flex-container {
