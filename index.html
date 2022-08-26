@@ -11,28 +11,32 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<header>
     <h1>Ben Folds Songs</h1>
-    <img class="benPiano" src="images/ben-folds-1500x1000-blank-jpg.jpeg" alt="Ben Folds holding piano">
-    <input type="text" placeholder="Ben Folds song title">
-    <div class="buttons">
-        <a id="getButton">Get Info</a>
-    </div>
-    <!-- <button>Click to get info</button> -->
-    <!-- <h2 id="songTitle">Song Title</h2> -->
-    <div class="flex-container">
-        <div class="flex-left">
+    <!-- <img src="./images/BenFolds_Summer19_980x550_Header_.png" alt="Ben Folds Playing Piano Silhouette"> -->
+</header>
+<main>
+    <section class="topContainer">
+        <div class="topInfo">
+            <h2>Enter a Ben Folds / Ben Folds Five Song for album details</h2>
+            <input type="text" placeholder="Ben Folds song title">
+            <button>Get Info</button>
+        </div>
+        <img class="benPiano" src="images/ben-folds-square-blank-jpg.jpeg" alt="Ben Folds holding piano">
+    </section>
+    <section class="bottomContainer">
+        <img src="images/Ben-Folds-square-1275793826.jpeg" alt="Ben Folds album image" class="border" id="albumImage">
+            <!-- <p class="caption" id="albumCaption"></p> -->
+        <div class="bottomInfo">
             <ul class="songInfoList">
-                <li><span>Song Title :  </span><span id="songTitle"></span></li>
-                <li><span>Artist :  </span><span id="artist"></span></li>
-                <li><span>Album :  </span><span id="album"></span></li>
-                <li><span>Year :  </span><span id="year"></span></li>
+                <li><span class="liTitle">Song Title :  </span><span id="songTitle"></span></li>
+                <li><span class="liTitle">Artist :  </span><span id="artist"></span></li>
+                <li><span class="liTitle">Album :  </span><span id="album"></span></li>
+                <li><span class="liTitle">Year :  </span><span id="year"></span></li>
             </ul>
         </div>
-        <div class="flex-right">
-            <img src="images/Ben-Folds-close-up-1275793826.jpeg" alt="Ben Folds album image" class="border" id="albumImage">
-            <!-- <p class="caption" id="albumCaption"></p> -->
-        </div>
-    </div>
+    </section>
+</main>
     <script src="js/main.js"></script>
     <script src="https://kit.fontawesome.com/22d2f500e4.js" crossorigin="anonymous"></script>
 </body>

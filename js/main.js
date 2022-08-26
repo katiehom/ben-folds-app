@@ -1,4 +1,4 @@
-document.querySelector('#getButton').addEventListener('click', apiRequest)
+document.querySelector('button').addEventListener('click', apiRequest)
 
 async function apiRequest() {
     const songTitle = document.querySelector('input').value
