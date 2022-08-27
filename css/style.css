@@ -186,7 +186,7 @@ button:hover {
     .benPiano {
         height: 10vh;
         min-width: 5vw;
-        min-height: 5vh;
+        min-height: 50px;
         border-radius: 30px;
         position: relative;
         top: -140px;
