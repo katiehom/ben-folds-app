@@ -14,7 +14,6 @@ header {
     height: 173px;
 }
 
-
 h1 {
     font-size: 3rem;
     margin-top: 0;
@@ -25,18 +24,17 @@ h1 {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 0 auto 25px;
-    padding: 0 25px;
 }
 
 .bottomContainer {
-    margin-top: 5%;
+    margin-top: 1.5rem;
 }
 
 .topInfo {
     text-align: center;
     background-color: black;
     height: 30vh;
+    height: 100%;
     width: 40vw;
     min-width: 300px;
     min-height: 343px;
@@ -47,6 +45,7 @@ h1 {
 .benPiano {
     height: 30vh;
     min-height: 343px;
+    max-height: 343px;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
 }
@@ -56,6 +55,7 @@ h1 {
     min-width: 299px;
     vertical-align: baseline;
     height: 30vh;
+    min-height: 200px; 
     width: 41vw;
     background-color: #ddff00;
     background-color: rgb(252, 226, 66);
@@ -64,21 +64,17 @@ h1 {
     color: black;
 }
 
-/* .bottomImg {
-    margin: 0;
-    padding: 0;
-    height: 30vh;
-} */
-
 #albumImage {
     height: 30vh;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
 }
 
 h2 {
-    width: 70%;
-    margin: 3rem auto 1rem auto;
+    width: 90%;
+    margin: 2rem auto;
     text-align: center;
     font-size: .95rem;
     padding: 0 15px;
@@ -91,7 +87,7 @@ ul {
 }
 
 ul li {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     padding-top: 3%;
     padding-right: 10px;
 }
@@ -131,7 +127,7 @@ input {
 
 button {
     display: block;
-    margin: 10px auto 25px;
+    margin: 5% auto;
     border: none;
     border-radius: 30px;
     padding: .2rem;
@@ -157,6 +153,9 @@ button:hover {
     html {
         font-size: 120%;
     }
+    h2 {
+        margin: 2rem auto;
+    }
 }
 
 @media screen and (min-width: 901px) {
@@ -164,21 +163,24 @@ button:hover {
         font-size: 140%;
     }
 }
-@media screen and (max-width: 750px) {
-    .topContainer {
-        padding: 0;
-        height: 250px;
-        min-height: 12vh;
+@media screen and (min-height: 1020px) and (min-width: 750px) {
+    h2 {
+        width: 90%;
+        margin: 2rem auto;
     }
+}
+@media screen and (max-width: 750px) {
     .bottomContainer {
-        margin-top: 2rem;
-        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+    .topContainer {
+        height: 225px;
     }
     .topInfo {
         border-radius: 30px;
         width: 100%;
         height: 12vh;
-        min-height: 22vh;
+        min-height: 225px;
         flex-shrink: 0;
     }
     .benPiano {
@@ -193,8 +195,10 @@ button:hover {
     }
     .bottomInfo {
         margin: 0 auto;
-        border-bottom-left-radius: 30px;
-        border-top-right-radius: 0;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
     }
     .bottomInfo, #albumImage {
         width: 50vw;
@@ -202,14 +206,17 @@ button:hover {
         height: auto;
     }
     #albumImage {
-        border-top-right-radius: 30px;
-        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
         margin: 0 auto;
     }
     button {
         font-size: 1rem;
         width: 130px;
         height: 40px;
+        margin: 1% auto;
     }
     input {
         width: 80%;
@@ -223,10 +230,13 @@ button:hover {
 }
 @media screen and (max-width: 585px) {
     .benPiano {
-        height: 7vh;
-        top: -102px;
-        right: -38%;
+        height: 5vh;
+        top: -80px;
+        right: -42%;
         margin-right: 5%;
+    }
+    h2 {
+        width: 90%;
     }
 }
 @media screen and (max-width: 403px) {
